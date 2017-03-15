@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>GRE Vocab</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+</head>
+
+<body>
+    <main>
+        <h1>GRE Vocab Master</h1>
+<section>
+    <ul class="tab">
+        
+        <li><a href="#" id = "FlashcardLink" class="tablinks" onclick="openFlashcards()"><strong>Flashcards</strong></a></li>
+        <script>
+            function openFlashcards()
+            {
+                window.open('http://localhost:3000/flashcards',"_self");   
+            }
+        </script>
+        <li><a href="#" id = "TestsLink" class="tablinks" onclick="openTests()"><strong>Tests</strong></a></li>
+        <script>
+            function openTests()
+            {
+                window.open('http://localhost:3000/tests',"_self");      
+            }
+        </script>
+        <li><a href="#" id = "ProfileLink" class="tablinks" onclick="openProfile()"><strong>Profile</strong></a></li>
+        <script>
+            function openProfile()
+            {
+               window.open('http://localhost:3000/loginpage/profile',"_self");    
+            }
+        </script>
+    </ul>
+</section>
+
+    {{{body}}}
+    <br>
+    <button type="button" id = "logoutButton" onclick="logoutProfile()" style="float:right;">Logout</button>
+    <script>
+        function logoutProfile()
+        {
+            window.open('http://localhost:3000/loginpage',"_self");  
+        }
+    </script>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+         {{> (lookup . 'partial') }}
+
+</body>
+
+</html>

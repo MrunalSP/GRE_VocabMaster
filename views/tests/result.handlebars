@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<form id="result-form" method="post">
+    
+    <section>
+        <h2>Result Analysis for {{firstName}} {{lastName}}</h2>
+        <br>
+        <div>
+        <table>
+            <tr>
+            <h2><th>Question Number</th></h2>
+            <h2><th>Your Answer</th></h2>
+            <h2><th>Correct Answer</th></h2>
+            <h2><th>Time Taken(secs)</th></h2>
+            </tr>
+            {{#each resultArray}}
+            <tr>
+            <td>{{questionCount}}</td>
+            <td>{{answer}}</td>
+            <td>{{correctAnswer}}</td>
+            <td>{{timeTaken}}</td>
+            </tr>
+            {{/each}}
+        </table>       
+         <h4>Total Number of Correct Answers : {{correctCount}}</h4>
+         <h4>Total Number of No Responses : {{no_response}}</h4>
+        </div>
+        
+               </section>
+    <br>
+  
+</form>

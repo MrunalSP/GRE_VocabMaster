@@ -1,0 +1,175 @@
+body {
+    background: #FEFEFE;
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 12pt;
+}
+
+main {
+    max-width: 75%;
+    margin: auto;
+}
+
+header {
+    border-bottom: 1px solid #AFAFAF;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #333;
+    margin-bottom: 2px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color:darkblue;
+    border : 1px solid darkblue;
+    width:100%;
+    background-color: snow;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1.15rem;
+}
+
+h6 {
+    font-size: 1.05rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.post {
+    width: 75%;
+    border-bottom: 1px dashed #333;
+}
+
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+table {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 2px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#mainWord {
+    text-align: center;
+    color: darkblue;
+    border-style: outset;
+}
+
+button[type = button] {
+    background-color:#1d8750;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+label
+{
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 12pt;
+    
+}
+
+#UserProfileHeading
+{
+    text-align: center;
+    padding : 2px;
+    color : darkblue;
+}
+
+#mainContainer
+{
+    width : 800px;
+    margin : 0 auto;
+}
+#LoginSignUp
+{
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    height: 700px;
+    width:300px; 
+    float:left;
+}
+
+#loginArticle
+{
+ font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+ width: 450px;
+ height:700px; 
+ margin-top: 0px;  
+ float:right;
+}
+
+#questionCountNumberDiv
+{
+    float:left;
+    width:400px;
+    height:20px;
+}
+
+#timerDiv{
+    float:right;
+    width:400px;
+    height:20px;
+}
